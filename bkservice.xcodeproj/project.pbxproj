@@ -1,0 +1,777 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0131602A19B66C4500EEF32D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0131602819B66C4500EEF32D /* InfoPlist.strings */; };
+		0131603919B66C4F00EEF32D /* HTTPMessage.h in Headers */ = {isa = PBXBuildFile; fileRef = 0131602C19B66C4F00EEF32D /* HTTPMessage.h */; };
+		0131603A19B66C4F00EEF32D /* HTTPMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = 0131602D19B66C4F00EEF32D /* HTTPMessage.m */; };
+		0131603B19B66C4F00EEF32D /* HTTPRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 0131602E19B66C4F00EEF32D /* HTTPRequest.h */; };
+		0131603C19B66C4F00EEF32D /* HTTPRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 0131602F19B66C4F00EEF32D /* HTTPRequest.m */; };
+		0131603D19B66C4F00EEF32D /* HTTPResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = 0131603019B66C4F00EEF32D /* HTTPResponse.h */; };
+		0131603E19B66C4F00EEF32D /* HTTPResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 0131603119B66C4F00EEF32D /* HTTPResponse.m */; };
+		0131603F19B66C4F00EEF32D /* HttpService.h in Headers */ = {isa = PBXBuildFile; fileRef = 0131603219B66C4F00EEF32D /* HttpService.h */; };
+		0131604019B66C4F00EEF32D /* HttpService.m in Sources */ = {isa = PBXBuildFile; fileRef = 0131603319B66C4F00EEF32D /* HttpService.m */; };
+		0131604119B66C4F00EEF32D /* TCPSocket.h in Headers */ = {isa = PBXBuildFile; fileRef = 0131603419B66C4F00EEF32D /* TCPSocket.h */; };
+		0131604219B66C4F00EEF32D /* TCPSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 0131603519B66C4F00EEF32D /* TCPSocket.m */; };
+		0131604319B66C4F00EEF32D /* ObjCWebService.h in Headers */ = {isa = PBXBuildFile; fileRef = 0131603719B66C4F00EEF32D /* ObjCWebService.h */; };
+		0131604419B66C4F00EEF32D /* ObjCWebService.m in Sources */ = {isa = PBXBuildFile; fileRef = 0131603819B66C4F00EEF32D /* ObjCWebService.m */; };
+		0131604A19B66C7E00EEF32D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01390E5A19B66B42007B3894 /* Foundation.framework */; };
+		0131604C19B66C7E00EEF32D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0131604B19B66C7E00EEF32D /* CoreGraphics.framework */; };
+		0131604E19B66C7E00EEF32D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0131604D19B66C7E00EEF32D /* UIKit.framework */; };
+		0131605419B66C7E00EEF32D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0131605219B66C7E00EEF32D /* InfoPlist.strings */; };
+		0131605619B66C7E00EEF32D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0131605519B66C7E00EEF32D /* main.m */; };
+		0131605A19B66C7E00EEF32D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0131605919B66C7E00EEF32D /* AppDelegate.m */; };
+		0131605C19B66C7E00EEF32D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0131605B19B66C7E00EEF32D /* Images.xcassets */; };
+		0131606319B66C7E00EEF32D /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0131606219B66C7E00EEF32D /* XCTest.framework */; };
+		0131606419B66C7E00EEF32D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01390E5A19B66B42007B3894 /* Foundation.framework */; };
+		0131606519B66C7E00EEF32D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0131604D19B66C7E00EEF32D /* UIKit.framework */; };
+		0131606D19B66C7F00EEF32D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0131606B19B66C7F00EEF32D /* InfoPlist.strings */; };
+		0131606F19B66C7F00EEF32D /* bkappTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0131606E19B66C7F00EEF32D /* bkappTests.m */; };
+		0131607619B66CA800EEF32D /* HTTPMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = 0131602D19B66C4F00EEF32D /* HTTPMessage.m */; };
+		0131607719B66CA800EEF32D /* HTTPRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 0131602F19B66C4F00EEF32D /* HTTPRequest.m */; };
+		0131607819B66CA800EEF32D /* HTTPResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 0131603119B66C4F00EEF32D /* HTTPResponse.m */; };
+		0131607919B66CA800EEF32D /* HttpService.m in Sources */ = {isa = PBXBuildFile; fileRef = 0131603319B66C4F00EEF32D /* HttpService.m */; };
+		0131607A19B66CA800EEF32D /* TCPSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 0131603519B66C4F00EEF32D /* TCPSocket.m */; };
+		0131607B19B66CA800EEF32D /* ObjCWebService.m in Sources */ = {isa = PBXBuildFile; fileRef = 0131603819B66C4F00EEF32D /* ObjCWebService.m */; };
+		01390E5B19B66B42007B3894 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01390E5A19B66B42007B3894 /* Foundation.framework */; };
+		01390E5D19B66B42007B3894 /* BridgeKitV3.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01390E5C19B66B42007B3894 /* BridgeKitV3.framework */; };
+		01390E6219B66B42007B3894 /* BridgeKitV3.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01390E5C19B66B42007B3894 /* BridgeKitV3.framework */; };
+		01390E8619B66BE9007B3894 /* AndroidManifest.xml in Resources */ = {isa = PBXBuildFile; fileRef = 01390E7E19B66BE9007B3894 /* AndroidManifest.xml */; };
+		01390E8719B66BE9007B3894 /* bkservice-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 01390E7F19B66BE9007B3894 /* bkservice-Info.plist */; };
+		01390E8819B66BE9007B3894 /* bkserviceActivity.h in Headers */ = {isa = PBXBuildFile; fileRef = 01390E8019B66BE9007B3894 /* bkserviceActivity.h */; };
+		01390E8A19B66BE9007B3894 /* bkserviceActivity.m in Sources */ = {isa = PBXBuildFile; fileRef = 01390E8219B66BE9007B3894 /* bkserviceActivity.m */; };
+		01390E8B19B66BE9007B3894 /* bkserviceService.h in Headers */ = {isa = PBXBuildFile; fileRef = 01390E8319B66BE9007B3894 /* bkserviceService.h */; };
+		01390E8D19B66BE9007B3894 /* bkserviceService.m in Sources */ = {isa = PBXBuildFile; fileRef = 01390E8519B66BE9007B3894 /* bkserviceService.m */; };
+		0154216E19B6794C00C0EBD6 /* bkserviceActivity.java in Sources */ = {isa = PBXBuildFile; fileRef = 01390E8119B66BE9007B3894 /* bkserviceActivity.java */; };
+		0154216F19B6794C00C0EBD6 /* bkserviceService.java in Sources */ = {isa = PBXBuildFile; fileRef = 01390E8419B66BE9007B3894 /* bkserviceService.java */; };
+		019E646B19B66D3900AAFF9C /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 019E646A19B66D3900AAFF9C /* CFNetwork.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0131606619B66C7E00EEF32D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 01390E4E19B66B42007B3894 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0131604819B66C7E00EEF32D;
+			remoteInfo = bkapp;
+		};
+		01390E6319B66B42007B3894 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 01390E4E19B66B42007B3894 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 01390E6019B66B42007B3894;
+			remoteInfo = "bkservice2 Java";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0131602919B66C4500EEF32D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = bkservice/en.lproj/InfoPlist.strings; sourceTree = SOURCE_ROOT; };
+		0131602C19B66C4F00EEF32D /* HTTPMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTTPMessage.h; sourceTree = "<group>"; };
+		0131602D19B66C4F00EEF32D /* HTTPMessage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTTPMessage.m; sourceTree = "<group>"; };
+		0131602E19B66C4F00EEF32D /* HTTPRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTTPRequest.h; sourceTree = "<group>"; };
+		0131602F19B66C4F00EEF32D /* HTTPRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTTPRequest.m; sourceTree = "<group>"; };
+		0131603019B66C4F00EEF32D /* HTTPResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTTPResponse.h; sourceTree = "<group>"; };
+		0131603119B66C4F00EEF32D /* HTTPResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTTPResponse.m; sourceTree = "<group>"; };
+		0131603219B66C4F00EEF32D /* HttpService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HttpService.h; sourceTree = "<group>"; };
+		0131603319B66C4F00EEF32D /* HttpService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HttpService.m; sourceTree = "<group>"; };
+		0131603419B66C4F00EEF32D /* TCPSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCPSocket.h; sourceTree = "<group>"; };
+		0131603519B66C4F00EEF32D /* TCPSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCPSocket.m; sourceTree = "<group>"; };
+		0131603719B66C4F00EEF32D /* ObjCWebService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ObjCWebService.h; sourceTree = "<group>"; };
+		0131603819B66C4F00EEF32D /* ObjCWebService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ObjCWebService.m; sourceTree = "<group>"; };
+		0131604919B66C7E00EEF32D /* bkapp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = bkapp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0131604B19B66C7E00EEF32D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		0131604D19B66C7E00EEF32D /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		0131605119B66C7E00EEF32D /* bkapp-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "bkapp-Info.plist"; sourceTree = "<group>"; };
+		0131605319B66C7E00EEF32D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		0131605519B66C7E00EEF32D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		0131605719B66C7E00EEF32D /* bkapp-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "bkapp-Prefix.pch"; sourceTree = "<group>"; };
+		0131605819B66C7E00EEF32D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		0131605919B66C7E00EEF32D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		0131605B19B66C7E00EEF32D /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		0131606119B66C7E00EEF32D /* bkappTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = bkappTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0131606219B66C7E00EEF32D /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = System/Library/Frameworks/XCTest.framework; sourceTree = SDKROOT; };
+		0131606A19B66C7E00EEF32D /* bkappTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "bkappTests-Info.plist"; sourceTree = "<group>"; };
+		0131606C19B66C7F00EEF32D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		0131606E19B66C7F00EEF32D /* bkappTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = bkappTests.m; sourceTree = "<group>"; };
+		01390E5719B66B42007B3894 /* bkservice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = bkservice.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		01390E5A19B66B42007B3894 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		01390E5C19B66B42007B3894 /* BridgeKitV3.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = BridgeKitV3.framework; path = System/Library/Frameworks/BridgeKitV3.framework; sourceTree = SDKROOT; };
+		01390E6119B66B42007B3894 /* bkservice Java.jar */ = {isa = PBXFileReference; explicitFileType = compiled.java.jar; includeInIndex = 0; path = "bkservice Java.jar"; sourceTree = BUILT_PRODUCTS_DIR; };
+		01390E7E19B66BE9007B3894 /* AndroidManifest.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = AndroidManifest.xml; path = bkservice/AndroidManifest.xml; sourceTree = SOURCE_ROOT; };
+		01390E7F19B66BE9007B3894 /* bkservice-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "bkservice-Info.plist"; path = "bkservice/bkservice-Info.plist"; sourceTree = SOURCE_ROOT; };
+		01390E8019B66BE9007B3894 /* bkserviceActivity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = bkserviceActivity.h; path = bkservice/bkserviceActivity.h; sourceTree = SOURCE_ROOT; };
+		01390E8119B66BE9007B3894 /* bkserviceActivity.java */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.java; name = bkserviceActivity.java; path = bkservice/bkserviceActivity.java; sourceTree = SOURCE_ROOT; };
+		01390E8219B66BE9007B3894 /* bkserviceActivity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = bkserviceActivity.m; path = bkservice/bkserviceActivity.m; sourceTree = SOURCE_ROOT; };
+		01390E8319B66BE9007B3894 /* bkserviceService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = bkserviceService.h; path = bkservice/bkserviceService.h; sourceTree = SOURCE_ROOT; };
+		01390E8419B66BE9007B3894 /* bkserviceService.java */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.java; name = bkserviceService.java; path = bkservice/bkserviceService.java; sourceTree = SOURCE_ROOT; };
+		01390E8519B66BE9007B3894 /* bkserviceService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = bkserviceService.m; path = bkservice/bkserviceService.m; sourceTree = SOURCE_ROOT; };
+		0154217019B67C4600C0EBD6 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
+		019E646A19B66D3900AAFF9C /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0131604619B66C7E00EEF32D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0131604C19B66C7E00EEF32D /* CoreGraphics.framework in Frameworks */,
+				0131604E19B66C7E00EEF32D /* UIKit.framework in Frameworks */,
+				0131604A19B66C7E00EEF32D /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0131605E19B66C7E00EEF32D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0131606319B66C7E00EEF32D /* XCTest.framework in Frameworks */,
+				0131606519B66C7E00EEF32D /* UIKit.framework in Frameworks */,
+				0131606419B66C7E00EEF32D /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		01390E5519B66B42007B3894 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				019E646B19B66D3900AAFF9C /* CFNetwork.framework in Frameworks */,
+				01390E5B19B66B42007B3894 /* Foundation.framework in Frameworks */,
+				01390E5D19B66B42007B3894 /* BridgeKitV3.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		01390E5F19B66B42007B3894 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				01390E6219B66B42007B3894 /* BridgeKitV3.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0131602B19B66C4F00EEF32D /* enigmaticape_http */ = {
+			isa = PBXGroup;
+			children = (
+				0131602C19B66C4F00EEF32D /* HTTPMessage.h */,
+				0131602D19B66C4F00EEF32D /* HTTPMessage.m */,
+				0131602E19B66C4F00EEF32D /* HTTPRequest.h */,
+				0131602F19B66C4F00EEF32D /* HTTPRequest.m */,
+				0131603019B66C4F00EEF32D /* HTTPResponse.h */,
+				0131603119B66C4F00EEF32D /* HTTPResponse.m */,
+				0131603219B66C4F00EEF32D /* HttpService.h */,
+				0131603319B66C4F00EEF32D /* HttpService.m */,
+				0131603419B66C4F00EEF32D /* TCPSocket.h */,
+				0131603519B66C4F00EEF32D /* TCPSocket.m */,
+			);
+			path = enigmaticape_http;
+			sourceTree = SOURCE_ROOT;
+		};
+		0131603619B66C4F00EEF32D /* enigmaticape_web */ = {
+			isa = PBXGroup;
+			children = (
+				0131603719B66C4F00EEF32D /* ObjCWebService.h */,
+				0131603819B66C4F00EEF32D /* ObjCWebService.m */,
+			);
+			path = enigmaticape_web;
+			sourceTree = SOURCE_ROOT;
+		};
+		0131604F19B66C7E00EEF32D /* bkapp */ = {
+			isa = PBXGroup;
+			children = (
+				0131605819B66C7E00EEF32D /* AppDelegate.h */,
+				0131605919B66C7E00EEF32D /* AppDelegate.m */,
+				0131605B19B66C7E00EEF32D /* Images.xcassets */,
+				0131605019B66C7E00EEF32D /* Supporting Files */,
+			);
+			path = bkapp;
+			sourceTree = "<group>";
+		};
+		0131605019B66C7E00EEF32D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				0131605119B66C7E00EEF32D /* bkapp-Info.plist */,
+				0131605219B66C7E00EEF32D /* InfoPlist.strings */,
+				0131605519B66C7E00EEF32D /* main.m */,
+				0131605719B66C7E00EEF32D /* bkapp-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		0131606819B66C7E00EEF32D /* bkappTests */ = {
+			isa = PBXGroup;
+			children = (
+				0131606E19B66C7F00EEF32D /* bkappTests.m */,
+				0131606919B66C7E00EEF32D /* Supporting Files */,
+			);
+			path = bkappTests;
+			sourceTree = "<group>";
+		};
+		0131606919B66C7E00EEF32D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				0131606A19B66C7E00EEF32D /* bkappTests-Info.plist */,
+				0131606B19B66C7F00EEF32D /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		01390E4D19B66B42007B3894 = {
+			isa = PBXGroup;
+			children = (
+				01390E6519B66B42007B3894 /* bkservice */,
+				0131604F19B66C7E00EEF32D /* bkapp */,
+				0131606819B66C7E00EEF32D /* bkappTests */,
+				01390E5919B66B42007B3894 /* Frameworks */,
+				01390E5819B66B42007B3894 /* Products */,
+				0154217019B67C4600C0EBD6 /* README.md */,
+			);
+			sourceTree = "<group>";
+		};
+		01390E5819B66B42007B3894 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				01390E5719B66B42007B3894 /* bkservice.app */,
+				01390E6119B66B42007B3894 /* bkservice Java.jar */,
+				0131604919B66C7E00EEF32D /* bkapp.app */,
+				0131606119B66C7E00EEF32D /* bkappTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		01390E5919B66B42007B3894 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				019E646A19B66D3900AAFF9C /* CFNetwork.framework */,
+				01390E5A19B66B42007B3894 /* Foundation.framework */,
+				01390E5C19B66B42007B3894 /* BridgeKitV3.framework */,
+				0131604B19B66C7E00EEF32D /* CoreGraphics.framework */,
+				0131604D19B66C7E00EEF32D /* UIKit.framework */,
+				0131606219B66C7E00EEF32D /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		01390E6519B66B42007B3894 /* bkservice */ = {
+			isa = PBXGroup;
+			children = (
+				0131602B19B66C4F00EEF32D /* enigmaticape_http */,
+				0131603619B66C4F00EEF32D /* enigmaticape_web */,
+				01390E7E19B66BE9007B3894 /* AndroidManifest.xml */,
+				01390E8019B66BE9007B3894 /* bkserviceActivity.h */,
+				01390E8119B66BE9007B3894 /* bkserviceActivity.java */,
+				01390E8219B66BE9007B3894 /* bkserviceActivity.m */,
+				01390E8319B66BE9007B3894 /* bkserviceService.h */,
+				01390E8419B66BE9007B3894 /* bkserviceService.java */,
+				01390E8519B66BE9007B3894 /* bkserviceService.m */,
+				01390E6619B66B42007B3894 /* Supporting Files */,
+			);
+			name = bkservice;
+			path = bkservice2;
+			sourceTree = "<group>";
+		};
+		01390E6619B66B42007B3894 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				01390E7F19B66BE9007B3894 /* bkservice-Info.plist */,
+				0131602819B66C4500EEF32D /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		01390E5219B66B42007B3894 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0131603D19B66C4F00EEF32D /* HTTPResponse.h in Headers */,
+				0131603B19B66C4F00EEF32D /* HTTPRequest.h in Headers */,
+				0131603F19B66C4F00EEF32D /* HttpService.h in Headers */,
+				0131604319B66C4F00EEF32D /* ObjCWebService.h in Headers */,
+				0131604119B66C4F00EEF32D /* TCPSocket.h in Headers */,
+				01390E8819B66BE9007B3894 /* bkserviceActivity.h in Headers */,
+				0131603919B66C4F00EEF32D /* HTTPMessage.h in Headers */,
+				01390E8B19B66BE9007B3894 /* bkserviceService.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		0131604819B66C7E00EEF32D /* bkapp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0131607419B66C7F00EEF32D /* Build configuration list for PBXNativeTarget "bkapp" */;
+			buildPhases = (
+				0131604519B66C7E00EEF32D /* Sources */,
+				0131604619B66C7E00EEF32D /* Frameworks */,
+				0131604719B66C7E00EEF32D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = bkapp;
+			productName = bkapp;
+			productReference = 0131604919B66C7E00EEF32D /* bkapp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		0131606019B66C7E00EEF32D /* bkappTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0131607519B66C7F00EEF32D /* Build configuration list for PBXNativeTarget "bkappTests" */;
+			buildPhases = (
+				0131605D19B66C7E00EEF32D /* Sources */,
+				0131605E19B66C7E00EEF32D /* Frameworks */,
+				0131605F19B66C7E00EEF32D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0131606719B66C7E00EEF32D /* PBXTargetDependency */,
+			);
+			name = bkappTests;
+			productName = bkappTests;
+			productReference = 0131606119B66C7E00EEF32D /* bkappTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		01390E5619B66B42007B3894 /* bkservice */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 01390E7B19B66B42007B3894 /* Build configuration list for PBXNativeTarget "bkservice" */;
+			buildPhases = (
+				01390E5219B66B42007B3894 /* Headers */,
+				01390E5319B66B42007B3894 /* Sources */,
+				01390E5419B66B42007B3894 /* Resources */,
+				01390E5519B66B42007B3894 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				01390E6419B66B42007B3894 /* PBXTargetDependency */,
+			);
+			name = bkservice;
+			productName = bkservice2;
+			productReference = 01390E5719B66B42007B3894 /* bkservice.app */;
+			productType = "com.apple.product-type.application";
+		};
+		01390E6019B66B42007B3894 /* bkservice Java */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 01390E7819B66B42007B3894 /* Build configuration list for PBXNativeTarget "bkservice Java" */;
+			buildPhases = (
+				01390E5E19B66B42007B3894 /* Sources */,
+				01390E5F19B66B42007B3894 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "bkservice Java";
+			productName = "bkservice2 Java";
+			productReference = 01390E6119B66B42007B3894 /* bkservice Java.jar */;
+			productType = "com.apportable.java.product-type.library";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		01390E4E19B66B42007B3894 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = Apportable;
+				TargetAttributes = {
+					0131606019B66C7E00EEF32D = {
+						TestTargetID = 01390E5619B66B42007B3894;
+					};
+				};
+			};
+			buildConfigurationList = 01390E5119B66B42007B3894 /* Build configuration list for PBXProject "bkservice" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 01390E4D19B66B42007B3894;
+			productRefGroup = 01390E5819B66B42007B3894 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				01390E5619B66B42007B3894 /* bkservice */,
+				01390E6019B66B42007B3894 /* bkservice Java */,
+				0131604819B66C7E00EEF32D /* bkapp */,
+				0131606019B66C7E00EEF32D /* bkappTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0131604719B66C7E00EEF32D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0131605419B66C7E00EEF32D /* InfoPlist.strings in Resources */,
+				0131605C19B66C7E00EEF32D /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0131605F19B66C7E00EEF32D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0131606D19B66C7F00EEF32D /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		01390E5419B66B42007B3894 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				01390E8619B66BE9007B3894 /* AndroidManifest.xml in Resources */,
+				0131602A19B66C4500EEF32D /* InfoPlist.strings in Resources */,
+				01390E8719B66BE9007B3894 /* bkservice-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0131604519B66C7E00EEF32D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0131607B19B66CA800EEF32D /* ObjCWebService.m in Sources */,
+				0131607A19B66CA800EEF32D /* TCPSocket.m in Sources */,
+				0131607819B66CA800EEF32D /* HTTPResponse.m in Sources */,
+				0131605A19B66C7E00EEF32D /* AppDelegate.m in Sources */,
+				0131607719B66CA800EEF32D /* HTTPRequest.m in Sources */,
+				0131607619B66CA800EEF32D /* HTTPMessage.m in Sources */,
+				0131605619B66C7E00EEF32D /* main.m in Sources */,
+				0131607919B66CA800EEF32D /* HttpService.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0131605D19B66C7E00EEF32D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0131606F19B66C7F00EEF32D /* bkappTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		01390E5319B66B42007B3894 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0131604419B66C4F00EEF32D /* ObjCWebService.m in Sources */,
+				01390E8D19B66BE9007B3894 /* bkserviceService.m in Sources */,
+				0131604219B66C4F00EEF32D /* TCPSocket.m in Sources */,
+				0131604019B66C4F00EEF32D /* HttpService.m in Sources */,
+				0131603E19B66C4F00EEF32D /* HTTPResponse.m in Sources */,
+				0131603C19B66C4F00EEF32D /* HTTPRequest.m in Sources */,
+				0131603A19B66C4F00EEF32D /* HTTPMessage.m in Sources */,
+				01390E8A19B66BE9007B3894 /* bkserviceActivity.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		01390E5E19B66B42007B3894 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0154216E19B6794C00C0EBD6 /* bkserviceActivity.java in Sources */,
+				0154216F19B6794C00C0EBD6 /* bkserviceService.java in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0131606719B66C7E00EEF32D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0131604819B66C7E00EEF32D /* bkapp */;
+			targetProxy = 0131606619B66C7E00EEF32D /* PBXContainerItemProxy */;
+		};
+		01390E6419B66B42007B3894 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 01390E6019B66B42007B3894 /* bkservice Java */;
+			targetProxy = 01390E6319B66B42007B3894 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		0131602819B66C4500EEF32D /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0131602919B66C4500EEF32D /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		0131605219B66C7E00EEF32D /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0131605319B66C7E00EEF32D /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		0131606B19B66C7F00EEF32D /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0131606C19B66C7F00EEF32D /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		0131607019B66C7F00EEF32D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "bkapp/bkapp-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "bkapp/bkapp-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		0131607119B66C7F00EEF32D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "bkapp/bkapp-Prefix.pch";
+				INFOPLIST_FILE = "bkapp/bkapp-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		0131607219B66C7F00EEF32D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/bkservice.app/bkservice";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "bkapp/bkapp-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "bkappTests/bkappTests-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		0131607319B66C7F00EEF32D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/bkservice.app/bkservice";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "bkapp/bkapp-Prefix.pch";
+				INFOPLIST_FILE = "bkappTests/bkappTests-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				VALIDATE_PRODUCT = YES;
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+		01390E7619B66B42007B3894 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ANDROID_MANIFEST = "$(SRCROOT)/bkservice2/AndroidManifest.xml";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = "$(inherited)";
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = apportablesdk1.0;
+			};
+			name = Debug;
+		};
+		01390E7719B66B42007B3894 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ANDROID_MANIFEST = "$(SRCROOT)/bkservice2/AndroidManifest.xml";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = "$(inherited)";
+				SDKROOT = apportablesdk1.0;
+			};
+			name = Release;
+		};
+		01390E7919B66B42007B3894 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "bkservice Java";
+			};
+			name = Debug;
+		};
+		01390E7A19B66B42007B3894 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "bkservice Java";
+			};
+			name = Release;
+		};
+		01390E7C19B66B42007B3894 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ANDROID_MANIFEST = "$(SRCROOT)/bkservice/AndroidManifest.xml";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "";
+				INFOPLIST_FILE = "bkservice/bkservice-Info.plist";
+				PRODUCT_NAME = bkservice;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		01390E7D19B66B42007B3894 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ANDROID_MANIFEST = "$(SRCROOT)/bkservice/AndroidManifest.xml";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "";
+				INFOPLIST_FILE = "bkservice/bkservice-Info.plist";
+				PRODUCT_NAME = bkservice;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0131607419B66C7F00EEF32D /* Build configuration list for PBXNativeTarget "bkapp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0131607019B66C7F00EEF32D /* Debug */,
+				0131607119B66C7F00EEF32D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0131607519B66C7F00EEF32D /* Build configuration list for PBXNativeTarget "bkappTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0131607219B66C7F00EEF32D /* Debug */,
+				0131607319B66C7F00EEF32D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		01390E5119B66B42007B3894 /* Build configuration list for PBXProject "bkservice" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				01390E7619B66B42007B3894 /* Debug */,
+				01390E7719B66B42007B3894 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		01390E7819B66B42007B3894 /* Build configuration list for PBXNativeTarget "bkservice Java" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				01390E7919B66B42007B3894 /* Debug */,
+				01390E7A19B66B42007B3894 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		01390E7B19B66B42007B3894 /* Build configuration list for PBXNativeTarget "bkservice" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				01390E7C19B66B42007B3894 /* Debug */,
+				01390E7D19B66B42007B3894 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 01390E4E19B66B42007B3894 /* Project object */;
+}
