@@ -16,7 +16,6 @@
 
 - (void)run
 {
-    NSAssert(self.webService == nil, @"Unexpected reentrance into Service.run");
     self.webService = [[WebService alloc] init];
     [self.webService startWebService];
 }

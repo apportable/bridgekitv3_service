@@ -2,7 +2,7 @@
 #import "HTTPMessage.h"
 
 @implementation HTTPRequest
-	
+    
 @synthesize headers = _headers;
 @synthesize method  = _method;
 @synthesize url     = _url;
@@ -11,21 +11,21 @@
 
 - ( id ) initWithHTTPMessage:( HTTPMessage * ) http_message {
 
-	if( (self = [super init]) ) {
-		
-		CFHTTPMessageRef request = [http_message request];
-		
-		_headers = (NSDictionary *)CFBridgingRelease(CFHTTPMessageCopyAllHeaderFields( request ));
-		_url     = (NSURL        *)CFBridgingRelease(CFHTTPMessageCopyRequestURL( request ));
-		_method  = (NSString     *)CFBridgingRelease(CFHTTPMessageCopyRequestMethod( request ));
-		_body    = (NSData       *)CFBridgingRelease(CFHTTPMessageCopyBody( request ));
-	}
-	
-	return self;
+    if( (self = [super init]) ) {
+        
+        CFHTTPMessageRef request = [http_message request];
+        
+        _headers = (NSDictionary *)CFBridgingRelease(CFHTTPMessageCopyAllHeaderFields( request ));
+        _url     = (NSURL        *)CFBridgingRelease(CFHTTPMessageCopyRequestURL( request ));
+        _method  = (NSString     *)CFBridgingRelease(CFHTTPMessageCopyRequestMethod( request ));
+        _body    = (NSData       *)CFBridgingRelease(CFHTTPMessageCopyBody( request ));
+    }
+    
+    return self;
 }
 
 - (NSString*) getBodyAsText {
-	return [[NSString alloc] initWithData:_body
+    return [[NSString alloc] initWithData:_body
                                   encoding:NSUTF8StringEncoding];
 }// Hmm, that rather assumes UTF8, doesn't it ?
 

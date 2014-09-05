@@ -21,14 +21,14 @@ public class bkserviceService extends Service {
     }
     public native void run();
 
-  	@Override
-	public IBinder onBind(Intent arg0) {
-		// TODO Auto-generated method stub
-		return null;
-	}
+    @Override
+    public IBinder onBind(Intent arg0) {
+        // TODO Auto-generated method stub
+        return null;
+    }
 
-	// To restart the service automatically after being killed due to memory 
-	// pressure, uncomment this method.
+    // To restart the service automatically after being killed due to memory
+    // pressure, uncomment this method.
     // @Override
     // public int onStartCommand(Intent intent, int flags, int startId) {
     //     // We want this service to continue running until it is explicitly

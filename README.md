@@ -1,4 +1,4 @@
-BridgeKit Service Demo
+BridgeKitV3 Service Demo
 
 Runs on iOS and Android
 

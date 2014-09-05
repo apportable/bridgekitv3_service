@@ -18,7 +18,8 @@
 
 - (void)run
 {
-	// Launch the service at application launch
+    // Launch the service at application launch. May also launch without using activity,
+    // launching the service directly.
     JavaClass *serviceClass = [JavaClass forName:@"com.apportable.bkservice.bkserviceService"];
     AndroidIntent *intent = [[AndroidIntent alloc] initWithContext:self class:serviceClass];
     [self startService:intent];

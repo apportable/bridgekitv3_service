@@ -7,7 +7,7 @@
 @property (readonly) NSString     * method;
 @property (readonly) NSURL        * url;
 @property (readonly) NSData       * body;
-	
+    
 
 - ( NSString * ) getBodyAsText;
 - ( id         ) initWithHTTPMessage:( HTTPMessage * ) http_message;
